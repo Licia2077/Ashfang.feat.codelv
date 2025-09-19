@@ -1,0 +1,161 @@
+/* ============================= */
+/* 전체 레이아웃 */
+/* ============================= */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans KR", "Noto Sans JP", Arial, sans-serif;
+  background: #f5f7fa;
+  color: #111;
+}
+
+.app-root {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.subtitle {
+  margin: 6px 0 18px 0;
+  color: #666;
+}
+
+/* ============================= */
+/* 섹션 공통 */
+/* ============================= */
+.section {
+  margin-top: 30px;
+}
+
+.section h2 {
+  margin: 0 0 14px 0;
+  font-size: 20px;
+}
+
+/* ============================= */
+/* 포켓몬 카드 */
+/* ============================= */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card {
+  width: 220px;
+  background: linear-gradient(180deg, #ffffff, #fbfbfd);
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(14, 30, 60, 0.08);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 26px rgba(14, 30, 60, 0.12);
+}
+
+.poke-img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 6px;
+}
+
+.names .kr {
+  font-size: 18px;
+  margin: 4px 0;
+  font-weight: 700;
+}
+
+.subnames {
+  display: flex;
+  justify-content: center;
+  color: #0073e6;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.names .jp {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.detail {
+  margin-top: 8px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* ============================= */
+/* 트레이너 카드 */
+/* ============================= */
+.trainer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.trainer-card {
+  width: 220px;
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(10, 20, 40, 0.06);
+  padding: 14px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.16s ease, box-shadow 0.16s ease;
+}
+
+.trainer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(14, 30, 60, 0.12);
+}
+
+/* 프로필 아이콘 */
+.trainer-profile {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #e5e7eb;
+  margin: 0 auto 10px auto;
+}
+
+/* 이름 */
+.trainer-names .kr {
+  font-size: 17px;
+  margin: 4px 0;
+  font-weight: 700;
+}
+
+.trainer-names .jp {
+  font-size: 13px;
+  color: #555;
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+.trainer-names .en {
+  font-size: 13px;
+  font-style: italic;
+  color: #0073e6;
+}
+
+/* 클릭 후 상세 */
+.trainer-detail {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.trainer-pokemon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  margin-top: 6px;
+}
