@@ -3,8 +3,17 @@ import "./App.css";
 import PokemonCard from "./PokemonCard";
 import TrainerCard from "./TrainerCard";
 
+// 🔑 src/img 안에 있는 이미지 불러오기
+import RaihanImg from "./img/Raihan.png";
+import KabuImg from "./img/Kabu.png";
+import IngoImg from "./img/Ingo.png";
+import EmmetImg from "./img/Emmet.png";   // ⚠️ img 폴더에 Emmet.png 추가 필요!
+import CynthiaImg from "./img/Cynthia.png";
+import GuzmaImg from "./img/Guzma.png";
+import NanuImg from "./img/Nanu.png";
+import AdamanImg from "./img/Adaman.png";
+
 function App() {
-  // 포켓몬 도감 데이터
   // 포켓몬 도감 데이터
   const [pokemonList] = useState([
     {
@@ -81,8 +90,7 @@ function App() {
     }
   ]);
 
-
-  // 트레이너 목록
+  // 트레이너 목록 (src/img에서 import한 이미지 사용)
   const [trainerList] = useState([
     {
       id: "t1",
@@ -92,7 +100,7 @@ function App() {
       role: "드래곤타입 관장",
       mainPokemonName: "두랄루돈",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
-      profileImg: "https://archives.bulbagarden.net/media/upload/2/2d/Spr_SW_Raihan.png"
+      profileImg: RaihanImg
     },
     {
       id: "t2",
@@ -102,7 +110,7 @@ function App() {
       role: "불꽃타입 관장",
       mainPokemonName: "다태우지네",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png",
-      profileImg: "https://archives.bulbagarden.net/media/upload/f/f5/SWSH_Kabu.png"
+      profileImg: KabuImg
     },
     {
       id: "t3",
@@ -112,7 +120,7 @@ function App() {
       role: "서브웨이마스터 / 캡틴",
       mainPokemonName: "샹델라",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
-      profileImg: "https://archives.bulbagarden.net/media/upload/1/1e/Spr_B2W2_Subway_Boss_Ingo.png"
+      profileImg: IngoImg
     },
     {
       id: "t4",
@@ -121,8 +129,8 @@ function App() {
       jpName: "クダリ",
       role: "서브웨이마스터 / 캡틴",
       mainPokemonName: "몰드류",
-      mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png", // 예시: 몰드류(Excadrill)
-      profileImg: "https://archives.bulbagarden.net/media/upload/4/45/Spr_B2W2_Subway_Boss_Emmet.png"
+      mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
+      profileImg: EmmetImg
     },
     {
       id: "t5",
@@ -132,7 +140,7 @@ function App() {
       role: "신오 챔피언",
       mainPokemonName: "한카리아스",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
-      profileImg: "https://static.wikia.nocookie.net/pokemon/images/f/fd/BDSP_Cynthia.png"
+      profileImg: CynthiaImg
     },
     {
       id: "t6",
@@ -142,17 +150,17 @@ function App() {
       role: "스컬단 보스",
       mainPokemonName: "갑주무사",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png",
-      profileImg: "https://static.wikia.nocookie.net/pokemon/images/f/f9/SM_Guzma.png"
+      profileImg: GuzmaImg
     },
     {
       id: "t7",
       krName: "나누",
       enName: "Nanu",
       jpName: "クチナシ",
-      role: "알로라 챔피언 / 악타입 캡틴",
+      role: "알로라 캡틴 / 악타입 전문가",
       mainPokemonName: "페르시온",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
-      profileImg: "https://static.wikia.nocookie.net/pokemon/images/8/8a/SM_Nanu.png"
+      profileImg: NanuImg
     },
     {
       id: "t8",
@@ -162,7 +170,7 @@ function App() {
       role: "금강단 단장",
       mainPokemonName: "리피아",
       mainPokemonImg: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
-      profileImg: "https://static.wikia.nocookie.net/pokemon/images/e/e0/B2W2_Colress.png"
+      profileImg: AdamanImg
     }
   ]);
 
@@ -170,7 +178,7 @@ function App() {
     <div className="app-root">
       <header className="app-header">
         <h1>📖 포켓몬 & 트레이너 도감</h1>
-        <p className="subtitle">최애 포켓몬& 최애 등장인물 도감</p>
+        <p className="subtitle">최애 포켓몬 & 최애 등장인물 도감</p>
       </header>
 
       <section className="section">
