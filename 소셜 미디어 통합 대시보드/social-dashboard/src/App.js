@@ -24,8 +24,8 @@ const SocialMediaDashboard = () => {
   ];
 
   const recentPosts = [
-    { id: 1, platform: 'instagram', content: '새로운 제품 론칭 소식! 🎉', likes: 245, comments: 32, shares: 18, time: '2시간 전' },
-    { id: 2, platform: 'facebook', content: '주말 이벤트 안내드립니다', likes: 156, comments: 28, shares: 42, time: '4시간 전' },
+    { id: 1, platform: 'instagram', content: '새로운 버츄얼 아이돌 등장?! 🎉', likes: 245, comments: 32, shares: 18, time: '2시간 전' },
+    { id: 2, platform: 'facebook', content: '리뷰 이벤트 당첨자 안내드립니다', likes: 156, comments: 28, shares: 42, time: '4시간 전' },
     { id: 3, platform: 'kakao', content: '고객 후기 모음집', likes: 89, comments: 15, shares: 8, time: '6시간 전' }
   ];
 
@@ -36,8 +36,8 @@ const SocialMediaDashboard = () => {
   ];
 
   const comments = [
-    { id: 1, platform: 'instagram', author: 'user123', content: '정말 좋은 제품이네요!', post: '새로운 제품 론칭 소식!', time: '1시간 전', replied: false },
-    { id: 2, platform: 'facebook', author: 'customer456', content: '언제 배송되나요?', post: '주말 이벤트 안내', time: '3시간 전', replied: true },
+    { id: 1, platform: 'instagram', author: 'user123', content: '그래서 그 아이돌 이름이 ㅁㄷ?', post: '새로운 버츄얼 아이돌 등장?!', time: '1시간 전', replied: false },
+    { id: 2, platform: 'facebook', author: 'customer456', content: '왜 나는 없냐?', post: '리뷰 이벤트 당첨자 안내드립니다', time: '3시간 전', replied: true },
     { id: 3, platform: 'kakao', author: 'member789', content: '가격 정보 알려주세요', post: '고객 후기 모음집', time: '5시간 전', replied: false }
   ];
 
